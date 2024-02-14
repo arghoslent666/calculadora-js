@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+  <div class="container" data-theme="dark">
+
+    <p class="error"></p>
+
+    <div class="calc-app">
+
+      <header>
+        <h1>calc</h1>
+        <div class="theme-box">
+          <span id="theme">THEME</span>
+          <div class="options-box">
+            <div class="option-spans">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="button-theme">
+              <div class="option-one"></div>
+              <div class="option-two"></div>
+              <div class="option-three"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <div class="display"></div>
+
+      <div class="buttons">
+        <button class="calc-buttons" data-text="7">7</button>
+        <button class="calc-buttons" data-text="8">8</button>
+        <button class="calc-buttons" data-text="9">9</button>
+        <button id="del">DEL</button>
+        <button class="calc-buttons" data-text="4">4</button>
+        <button class="calc-buttons" data-text="5">5</button>
+        <button class="calc-buttons" data-text="6">6</button>
+        <button class="calc-buttons" data-text="+">+</button>
+        <button class="calc-buttons" data-text="1">1</button>
+        <button class="calc-buttons" data-text="2">2</button>
+        <button class="calc-buttons" data-text="3">3</button>
+        <button class="calc-buttons" data-text="-">-</button>
+        <button class="calc-buttons" data-text=".">.</button>
+        <button class="calc-buttons" data-text="0">0</button>
+        <button class="calc-buttons" data-text="/">/</button>
+        <button class="calc-buttons"data-text="*">x</button>
+        <button id="reset">RESET</button>
+        <button id="equal">=</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
