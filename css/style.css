@@ -24,15 +24,9 @@ header{
     margin-bottom: 20px;
 }
 
-.error{
-    position: absolute;
-    top: 140px;
-    color: var(--display-header-color);
-    font-size: 25px;
-}
-
 .calc-app{
     height: fit-content;
+    width: 337px;
 }
 
 .theme-box{

@@ -9,7 +9,7 @@ class Calculator{
         this.equal = document.querySelector(equal);
         this.del = document.querySelector(del);
         this.reset = document.querySelector(reset);
-        this.error = document.querySelector(error)
+        this.error = document.querySelector(error);
 
         this.result = this.result.bind(this)
         this.delOne = this.delOne.bind(this)
@@ -24,10 +24,10 @@ class Calculator{
         let displayContent = this.display.textContent;
         let lastChar = displayContent.charAt(displayContent.length - 1);
 
-        if(lastChar === '.' || lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/') {
-            this.error.textContent = 'Não é possível calcular operadores'            
+        if(lastChar === '.' || lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/') {           
+            this.display.style.color = 'red'
             setTimeout(() => {
-                this.error.textContent = ''
+                this.display.style.color = 'var(--display-header-color)';
             }, 2000);
             return
         }
